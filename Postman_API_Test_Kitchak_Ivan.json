@@ -1,0 +1,1962 @@
+{
+	"info": {
+		"_postman_id": "969d35bb-4ac4-49f8-a488-371137ad68b7",
+		"name": "Тестирование создания организации",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38538894"
+	},
+	"item": [
+		{
+			"name": "Тестовые сценарии создания организации",
+			"item": [
+				{
+					"name": "Создание организации с корректными данными",
+					"item": [
+						{
+							"name": "Граничные значения",
+							"item": [
+								{
+									"name": "Поле \"name\" (количество символов равно 1000)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"абвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцурл\",\r\n    // количество символов равно 1000\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Поле \"address\" (количество символов равно 1000)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"абвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцурл\",\r\n    // количество символов равно 1000\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Поле \"head\" -> \"position\" (количество символов равно 50)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"абвбабвабвсмлоыврмгыврмывгшмрыавгшмрывшмгрыврмлрол\",\r\n            // количество символов равно 50\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Поле \"head\" -> \"firstName\" (количество символов равно 60)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"абвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмагрыврмлроловаывавыаа\",\r\n            // количество символов равно 60\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Поле \"head\" -> \"lastName\" (количество символов равно 50)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"абвбабвабвсмлоыврмгаыврмывгшмрывгшмрывшмгрыврмлроловаывавыав\",\r\n            // количество символов равно 60\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Поле \"head\" -> \"middleName\" (количество символов равно 50)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"абвбабвабвсмлоыврмгыврамывгшмрывгшмрывшмгрыврмлроловаываваав\",\r\n            // количество символов равно 60\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Все поля заполнены корректно",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Заполнены только обязательные поля",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    // Нет поля \"inn\"\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"head\": [\r\n        {\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"lastName\": \"Иванов\",\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Создание организации с отсутствующими данными",
+					"item": [
+						{
+							"name": "Без поля \"head\"",
+							"item": [
+								{
+									"name": "Без поля \"head\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    // Полное отсутствие \"head\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"inn\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581098\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            // Нет поля \"inn\"\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"snils\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            // Нет поля \"snils\"\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"position\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            // Нет поля \"position\"\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"firstName\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            // Нет поля \"firstName\"\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"middleName\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            // Нет поля \"middleName\"\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"lastName\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            // Нет поля \"lastName\"\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без поля \"head\" -> \"citizenship\"",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\"\r\n            // Нет поля \"citizenship\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Без поля \"name\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // Нет поля \"name\"\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Без поля \"inn\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    // Нет поля \"inn\"\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Без поля \"ogrn\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    // Нет поля \"ogrn\"\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Без поля \"kpp\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    // Нет поля \"kpp\"\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Без поля \"address\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    // Нет поля \"address\"\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Без поля \"region\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    // Нет поля \"region\"\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Без поля \"phone\"",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    // Нет поля \"phone\"\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+									"protocol": "https",
+									"host": [
+										"intership-study",
+										"k",
+										"renue",
+										"ru"
+									],
+									"path": [
+										"api",
+										"v1",
+										"de",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Создание организации с некорректными данными",
+					"item": [
+						{
+							"name": "Некорректные данные в поле \"inn\"",
+							"item": [
+								{
+									"name": "Использование символов вне допустимого паттерна",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI0MjQ1LCJpYXQiOjE3MjcyMDYyNDV9.fwc9KSt4KUQR9HQFKUOjjVCWzr-gAfvamyF-YLMuVQGvS8G0WbaqLzD3CbXD92Exr3pLVoOEW3IuTxXtksq2Rw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 10",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"77а1б8а040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 10",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Некорректные данные в поле \"ogrn\"",
+							"item": [
+								{
+									"name": "Использование символов вне допустимого паттерна",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 13",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 13",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Некорректные данные в поле \"kpp\"",
+							"item": [
+								{
+									"name": "Использование символов вне допустимого паттерна",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 9",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 9",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Некорректные данные в поле \"region\"",
+							"item": [
+								{
+									"name": "Использование символов вне допустимого паттерна",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 2",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 2",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Некорректные данные в поле \"phone\"",
+							"item": [
+								{
+									"name": "Использование не только цифр",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 11",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 11",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Некорректные данные в поле \"head\" -> \"inn\"",
+							"item": [
+								{
+									"name": "Использование символов вне допустимого паттерна",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 12",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 12",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Некорректные данные в поле \"head\" -> \"snils\"",
+							"item": [
+								{
+									"name": "Использование символов вне допустимого паттерна",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр больше 11",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Количество цифр меньше 11",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MTg0MTg1LCJpYXQiOjE3MjcxNjYxODV9.q2rddhR-Ro4rOOjG7r64cuxPe6jqwTv90gpso0wy0yB2izOk4m499Tbw-FIKfK5dQcn0UcKTzwnDY4U2gMpgFQ\n",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Данные за пределами граничных значений",
+							"item": [
+								{
+									"name": "Некорректные данные в поле \"name\" (количество символов больше 1000)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI1MTcyLCJpYXQiOjE3MjcyMDcxNzJ9.0xBh4h1lPRhAaH0akouqak5iQL_yu1zAQYPOl99s26S1rOmWn3HOYbF8ffKO7JGV5-msM_zMfMXhEC0zorr9ow",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"абвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцурлл\",\r\n    // количество символов больше 1000\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Некорректные данные в поле \"address\" (количество символов больше 1000)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjAyMjk2LCJpYXQiOjE3MjcxODQyOTZ9.4ExJ5cNQeJI5UjGkNVF3QaIIwwD0Cdbe49x0o2qm9IW3j6c8laPk_F9yG-oI54yrH7SfOxbuL0H1ulfaleaSxw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"абвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцураабвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмгрыврмшгывмршгырвмшгырвмшгрывмырвшгмрыгшвмрыгвмршгруашгщйцурлж\",\r\n    // количество символов больше 1000\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Некорректные данные в поле \"head\" -> \"position\" (количество символов больше 50)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI1MTcyLCJpYXQiOjE3MjcyMDcxNzJ9.0xBh4h1lPRhAaH0akouqak5iQL_yu1zAQYPOl99s26S1rOmWn3HOYbF8ffKO7JGV5-msM_zMfMXhEC0zorr9ow",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"абвбабвабвсмлоыврмгыврмывгшмрыавгшмрывшмгрыврмлроло\",\r\n            // количество символов больше 50\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Некорректные данные в поле \"head\" -> \"firstName\" (количество символов больше 60)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI1MTcyLCJpYXQiOjE3MjcyMDcxNzJ9.0xBh4h1lPRhAaH0akouqak5iQL_yu1zAQYPOl99s26S1rOmWn3HOYbF8ffKO7JGV5-msM_zMfMXhEC0zorr9ow",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"абвбабвабвсмлоыврмгыврмывгшмрывгшмрывшмагрыврмлроловаывавыаав\",\r\n            // количество символов больше 60\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Некорректные данные в поле \"head\" -> \"lastName\" (количество символов больше 50)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI1MTcyLCJpYXQiOjE3MjcyMDcxNzJ9.0xBh4h1lPRhAaH0akouqak5iQL_yu1zAQYPOl99s26S1rOmWn3HOYbF8ffKO7JGV5-msM_zMfMXhEC0zorr9ow",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"Иванович\",\r\n            \"lastName\": \"абвбабвабвсмлоыврмгаыврмывгшмрывгшмрывшмгрыврмлроловаывавыаав\",\r\n            // количество символов больше 60\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Некорректные данные в поле \"head\" -> \"middleName\" (количество символов больше 50)",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI3MjI1MTcyLCJpYXQiOjE3MjcyMDcxNzJ9.0xBh4h1lPRhAaH0akouqak5iQL_yu1zAQYPOl99s26S1rOmWn3HOYbF8ffKO7JGV5-msM_zMfMXhEC0zorr9ow",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Центральная энергетическая таможня\",\r\n    \"inn\": \"7721581040\",\r\n    \"ogrn\": \"1072072854002\",\r\n    \"kpp\": \"062543052\",\r\n    \"address\": \"ул. Стоянова, дом 12\",\r\n    \"region\": \"33\",\r\n    \"phone\": \"+79123456789\",\r\n    \"head\": [\r\n        {\r\n            \"inn\": \"505021556592\",\r\n            \"snils\": \"97444534448\",\r\n            \"position\": \"Начальник таможни\",\r\n            \"firstName\": \"Иван\",\r\n            \"middleName\": \"абвбабвабвсмлоыврмгыврамывгшмрывгшмрывшмгрыврмлроловаывавыаав\",\r\n            // количество символов больше 60\r\n            \"lastName\": \"Иванов\",\r\n            \"citizenship\": \"BY\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://intership-study.k.renue.ru/api/v1/de/organization",
+											"protocol": "https",
+											"host": [
+												"intership-study",
+												"k",
+												"renue",
+												"ru"
+											],
+											"path": [
+												"api",
+												"v1",
+												"de",
+												"organization"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Получение токена авторизации",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"user\",\r\n\"password\": \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intership-study.k.renue.ru/authenticate",
+					"protocol": "https",
+					"host": [
+						"intership-study",
+						"k",
+						"renue",
+						"ru"
+					],
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение организации",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intership-study.k.renue.ru/api/v1/de/organization/a862c6b9-3592-42b7-b7b4-d7f4fb995670",
+					"protocol": "https",
+					"host": [
+						"intership-study",
+						"k",
+						"renue",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"de",
+						"organization",
+						"a862c6b9-3592-42b7-b7b4-d7f4fb995670"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
